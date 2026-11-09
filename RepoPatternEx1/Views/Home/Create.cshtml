@@ -1,0 +1,35 @@
+﻿@model RepoPatternEx1.Models.Product
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+      <h2> New Product </h2>
+        <form method="post" asp-action="Create">
+                <table>
+                    <tr>
+                        <td> Product Name </td>
+                        <td>
+                            <input type="text" asp-for="ProductName" /> 
+                         </td>
+                    </tr>
+                    <tr>
+                        <td> Mfg Name </td>
+                        <td> 
+                            <input type="text" asp-for="MfgName" /> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Price </td>
+                        <td> <input type="text" asp-for="Price" /> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> 
+                            <input type="submit" value="Save" />
+                        </td>
+                    </tr>
+                </table>
+    </form>
+    </body>
+    </html>
